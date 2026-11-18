@@ -1,0 +1,39 @@
+{
+  "name": "invoice-email-automation",
+  "version": "1.0.0",
+  "description": "Inbox -> invoice extraction (PDF + email, optional LLM) -> validation & anomaly checks -> accounting DB/Sheet -> alerts.",
+  "author": "Taha Elkarroumy",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts run",
+    "watch": "tsx src/cli.ts watch",
+    "report": "tsx src/cli.ts report",
+    "demo": "bash scripts/demo.sh",
+    "samples": "tsx scripts/make-samples.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "imapflow": "^2.12.1",
+    "mailparser": "^3.14.5",
+    "unpdf": "^2.2.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^26.6.6",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pdfkit": "^0.17.7",
+    "nodemailer": "^10.6.0",
+    "pdfkit": "^0.20.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  }
+}
