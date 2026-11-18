@@ -1,0 +1,20 @@
+From: Legacy ERP <noreply@legacy-erp.example>
+To: invoices@client-company.com
+Subject: Invoice 2026-0099
+Message-ID: <erp-99@mail.example>
+Date: Sun, 08 Nov 2026 03:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="--_NmP-76565102ed0492b6-Part_1"
+
+----_NmP-76565102ed0492b6-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Automated invoice attached.
+----_NmP-76565102ed0492b6-Part_1
+Content-Type: application/pdf; name=invoice-2026-0099.pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=invoice-2026-0099.pdf
+
+JVBERi0xLjQgdHJ1bmNhdGVkIGdhcmJhZ2U=
+----_NmP-76565102ed0492b6-Part_1--
