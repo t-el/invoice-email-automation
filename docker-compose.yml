@@ -1,0 +1,9 @@
+services:
+  invoice-worker:
+    build: .
+    env_file: [.env]
+    environment:
+      - DATA_DIR=/data
+      - INBOX_DIR=/data/inbox
+    volumes: ["./data:/data"]
+    restart: unless-stopped
